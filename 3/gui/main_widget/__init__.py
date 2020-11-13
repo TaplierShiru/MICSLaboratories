@@ -1,0 +1,1 @@
+from .main_widget_wrapper import Main_widget
