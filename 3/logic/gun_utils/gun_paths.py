@@ -1,6 +1,12 @@
-# Store list with 2 parts, start and end point!
 from .gun_states import GunStates
 
+"""
+Collect position where player can walk
+Also where are all path between all states
+
+"""
+
+# (X, Y) - coords on the frame
 BAD_CENTER = [20, 20]
 MY_ROOM_CENTER = [120, 120]
 CLOTHS_PLACE = [175, 125]
@@ -13,7 +19,7 @@ TOILER = [325, 100]
 KICTHEN = [100, 335]
 EXIT = [325, 900]
 
-
+# None - mean finish
 ONE2TWO = [
     [BAD_CENTER, MY_ROOM_CENTER],
     None
@@ -97,6 +103,8 @@ SEVEN2ONE = [
     None
 ]
 
+# Keep all possibile path in the dict,
+# easy to get, easy to use!
 STORAGE_PATHS = {
     GunStates.STATE_1_SLEEP: {
         GunStates.STATE_2_WAKEUP: ONE2TWO,

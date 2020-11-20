@@ -3,7 +3,7 @@ import random
 
 class UniformGenerator:
     """
-    Моделирует равномерное распределение
+    Generate uniform dist
 
     """
 

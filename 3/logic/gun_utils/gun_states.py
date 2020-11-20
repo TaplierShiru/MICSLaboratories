@@ -1,11 +1,16 @@
 
 
 class GunStates:
+    """
+    Keep all possibible statements and their conditions
+
+    """
 
     TIME = 'time'
     LUCKY = 'lucky'
     BRAIN_STRENGTH = 'brain_strength'
 
+    # States
     STATE_1_SLEEP = 1
     STATE_2_WAKEUP = 2
     STATE_3_SLEEP_5MIN_MORE = 3
@@ -16,6 +21,7 @@ class GunStates:
     STATE_8_GO_TO_UNIVERSITY = 8
     STATE_FINISH = 9
 
+    # States and their conditions
     # Time - should be less than
     # Lucky - should be more than
     # Brain - should be more than
@@ -32,6 +38,10 @@ class GunStates:
 
     @staticmethod
     def is_cur_situation_good_for(cur_state: int, time: int, lucky: int, brain_strength: int):
+        """
+        Return True, if current parameters are good for `cur_state`
+
+        """
         data_state = GunStates.STATE_DICT[cur_state]
 
         if time < data_state[GunStates.TIME] and \

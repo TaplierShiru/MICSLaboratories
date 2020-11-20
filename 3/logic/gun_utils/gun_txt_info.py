@@ -1,5 +1,9 @@
 from .gun_states import GunStates
 
+"""
+Some parameters to write them into text box
+
+"""
 
 TEXT_DATA = {
     GunStates.STATE_1_SLEEP: "Вася спит...",
