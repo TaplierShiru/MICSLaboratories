@@ -19,20 +19,26 @@ class GunLogic:
         GunStates.STATE_2_WAKEUP: [GunStates.STATE_6_WASHFACE, GunStates.STATE_3_SLEEP_5MIN_MORE],
         GunStates.STATE_3_SLEEP_5MIN_MORE: [GunStates.STATE_2_WAKEUP],
         GunStates.STATE_4_TAKE_CLOTHS: [
-            GunStates.STATE_7_EAT,
-            GunStates.STATE_3_SLEEP_5MIN_MORE, GunStates.STATE_8_GO_TO_UNIVERSITY
+            GunStates.STATE_7_EAT, GunStates.STATE_8_GO_TO_UNIVERSITY,
+            GunStates.STATE_3_SLEEP_5MIN_MORE
         ],
-        GunStates.STATE_5_TAKE_SCHOOLBAG: [GunStates.STATE_4_TAKE_CLOTHS, GunStates.STATE_8_GO_TO_UNIVERSITY],
-        GunStates.STATE_6_WASHFACE: [GunStates.STATE_5_TAKE_SCHOOLBAG, GunStates.STATE_4_TAKE_CLOTHS],
-        GunStates.STATE_7_EAT: [GunStates.STATE_8_GO_TO_UNIVERSITY],
+        GunStates.STATE_5_TAKE_SCHOOLBAG: [
+            GunStates.STATE_4_TAKE_CLOTHS, GunStates.STATE_8_GO_TO_UNIVERSITY,
+            GunStates.STATE_3_SLEEP_5MIN_MORE
+        ],
+        GunStates.STATE_6_WASHFACE: [
+            GunStates.STATE_5_TAKE_SCHOOLBAG, GunStates.STATE_4_TAKE_CLOTHS,
+            GunStates.STATE_3_SLEEP_5MIN_MORE
+        ],
+        GunStates.STATE_7_EAT: [GunStates.STATE_8_GO_TO_UNIVERSITY, GunStates.STATE_3_SLEEP_5MIN_MORE],
         GunStates.STATE_8_GO_TO_UNIVERSITY: [GunStates.STATE_FINISH],
     }
 
     MAX_TIME = 60
     # Parameters for uniform dist (min_value, max_value)
-    LEFT_TIME, RIGHT_TIME = (5, 12)
-    LEFT_LUCKY, RIGHT_LUCKY = (2, 6)
-    LEFT_BRAIN, RIGHT_BRAIN = (2, 8)
+    LEFT_TIME, RIGHT_TIME = (5, 10)
+    LEFT_LUCKY, RIGHT_LUCKY = (0, 6)
+    LEFT_BRAIN, RIGHT_BRAIN = (0, 7)
 
     def __init__(self, data_sender: DataSender, start_time=0):
         self.__all_time = start_time

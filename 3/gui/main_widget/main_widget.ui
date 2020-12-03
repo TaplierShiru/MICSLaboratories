@@ -200,7 +200,7 @@
       <item>
        <widget class="QLabel" name="label_cur_brain">
         <property name="text">
-         <string>Сила мозга</string>
+         <string>Собранность</string>
         </property>
        </widget>
       </item>

@@ -38,6 +38,7 @@ class Ui_Form(object):
         self.plainTextEdit_game_info = QPlainTextEdit(self.gridLayoutWidget)
         self.plainTextEdit_game_info.setObjectName(u"plainTextEdit_game_info")
         self.plainTextEdit_game_info.setReadOnly(True)
+
         self.verticalLayout_2.addWidget(self.plainTextEdit_game_info)
 
         self.verticalSpacer = QSpacerItem(20, 400, QSizePolicy.Minimum, QSizePolicy.Maximum)
@@ -227,7 +228,7 @@ class Ui_Form(object):
         self.label_info_about_game.setText(QCoreApplication.translate("Form", u"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u0432 \u043c\u0438\u0440\u0435", None))
         self.pushButton_start_game.setText(QCoreApplication.translate("Form", u"Start", None))
         self.label_cur_lucky.setText(QCoreApplication.translate("Form", u"\u0423\u0434\u0430\u0447\u0430", None))
-        self.label_cur_brain.setText(QCoreApplication.translate("Form", u"\u0421\u0438\u043b\u0430 \u043c\u043e\u0437\u0433\u0430", None))
+        self.label_cur_brain.setText(QCoreApplication.translate("Form", u"\u0421\u043e\u0431\u0440\u0430\u043d\u043d\u043e\u0441\u0442\u044c", None))
         self.label_timer.setText(QCoreApplication.translate("Form", u"\u0422\u0430\u0439\u043c\u0435\u0440", None))
         self.label_cur_statictic.setText(QCoreApplication.translate("Form", u"\u0422\u0435\u043a\u0443\u0449\u0430\u044f \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0430:", None))
     # retranslateUi

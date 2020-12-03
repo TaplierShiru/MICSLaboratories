@@ -26,14 +26,14 @@ class GunStates:
     # Lucky - should be more than
     # Brain - should be more than
     STATE_DICT = {
-        STATE_1_SLEEP:                  {TIME: 0,   LUCKY: 0, BRAIN_STRENGTH: 0},
-        STATE_2_WAKEUP:                 {TIME: 60,  LUCKY: 3, BRAIN_STRENGTH: 5},
-        STATE_3_SLEEP_5MIN_MORE:        {TIME: 60,  LUCKY: 0, BRAIN_STRENGTH: 0},
-        STATE_4_TAKE_CLOTHS:            {TIME: 50,  LUCKY: 2, BRAIN_STRENGTH: 3},
-        STATE_5_TAKE_SCHOOLBAG:         {TIME: 40,  LUCKY: 2, BRAIN_STRENGTH: 5},
-        STATE_6_WASHFACE:               {TIME: 40,  LUCKY: 2, BRAIN_STRENGTH: 3},
-        STATE_7_EAT:                    {TIME: 40,  LUCKY: 4, BRAIN_STRENGTH: 4},
-        STATE_8_GO_TO_UNIVERSITY:       {TIME: 60,  LUCKY: 0, BRAIN_STRENGTH: 0},
+        STATE_1_SLEEP:                  {TIME: -1,  LUCKY: -1, BRAIN_STRENGTH: -1},
+        STATE_2_WAKEUP:                 {TIME: 60,  LUCKY:  3, BRAIN_STRENGTH:  5},
+        STATE_3_SLEEP_5MIN_MORE:        {TIME: 60,  LUCKY:  0, BRAIN_STRENGTH:  0},
+        STATE_4_TAKE_CLOTHS:            {TIME: 50,  LUCKY:  2, BRAIN_STRENGTH:  3},
+        STATE_5_TAKE_SCHOOLBAG:         {TIME: 40,  LUCKY:  2, BRAIN_STRENGTH:  5},
+        STATE_6_WASHFACE:               {TIME: 40,  LUCKY:  2, BRAIN_STRENGTH:  3},
+        STATE_7_EAT:                    {TIME: 40,  LUCKY:  4, BRAIN_STRENGTH:  4},
+        STATE_8_GO_TO_UNIVERSITY:       {TIME: 60,  LUCKY:  2, BRAIN_STRENGTH:  2},
     }
 
     @staticmethod
